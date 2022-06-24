@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.menu {
+  margin: auto;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80px;
+  display: flex;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  background-color: white;
+}
+
+ul {
+  display: flex;
+  padding: 0 50px;
+  justify-content: space-around;
+  
+}
+
+ul li {
+  list-style-type: none;
+  padding: 0 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #18A0FB;
+}
+
+body {
+  background-color: black;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.button-white {
+  background-color: white;
+  width: 100px;
+  height: 30px;
+  border-radius: 6px;
+  border: solid 2px #18A0FB;
+  font-family: 'Montserrat';
+  font-size: 15px;
+  line-height: 18px;
+  color: #18A0FB;
+}
+
+.button-blue {
+  background-color: #18A0FB;
+  width: 100px;
+  height: 30px;
+  border-radius: 6px;
+  border: solid 2px #18A0FB;
+  font-family: 'Montserrat';
+  font-size: 15px;
+  line-height: 18px;
+  color: white;
+}
+
+.main-image {
+  background: url("/assets/images/nasa.jpg") no-repeat bottom center scroll;
+  /* max-width: 1920px; */
+  max-width: 1920px;
+  width: 100vw;
+  height: calc(100vh - 80px);
+  background-size: cover;
+  position: relative;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: calc(100vh - 80px);
+  align-items: center;
+}
+
+.video i {
+  color: #18A0FB;
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 100%;
+  margin-bottom: 50px;
+}
+
+.video p {
+  font-size: 25px;
+  text-shadow: 5px;
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.video button {
+  width: 192px;
+  height: 42px;
+}
