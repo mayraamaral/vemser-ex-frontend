@@ -10,12 +10,13 @@ body {
 }
 
 .container {
+  margin: auto;
   max-width: 1200px;
 }
 
 .menu {
-  margin: auto;
-  justify-content: flex-start;
+  /* margin: auto; */
+  justify-content: space-between;
   align-items: center;
   height: 80px;
   display: flex;
@@ -23,6 +24,7 @@ body {
 
 .menu-item {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -32,9 +34,7 @@ header {
 
 ul {
   display: flex;
-  padding: 0 50px;
   justify-content: space-around;
-  
 }
 
 ul li {
@@ -44,11 +44,7 @@ ul li {
 
 ul li a {
   text-decoration: none;
-  color: #18A0FB;
-}
-
-body {
-  background-color: black;
+  color: #18a0fb;
 }
 
 .buttons {
@@ -58,22 +54,22 @@ body {
 
 .button-white {
   background-color: white;
-  width: 100px;
+  width: 130px;
   height: 30px;
   border-radius: 6px;
-  border: solid 2px #18A0FB;
+  border: solid 2px #18a0fb;
   font-family: 'Montserrat';
   font-size: 15px;
   line-height: 18px;
-  color: #18A0FB;
+  color: #18a0fb;
 }
 
 .button-blue {
-  background-color: #18A0FB;
+  background-color: #18a0fb;
   width: 100px;
   height: 30px;
   border-radius: 6px;
-  border: solid 2px #18A0FB;
+  border: solid 2px #18a0fb;
   font-family: 'Montserrat';
   font-size: 15px;
   line-height: 18px;
@@ -81,26 +77,24 @@ body {
 }
 
 .main-image {
-  background: url("/assets/images/nasa.jpg") no-repeat bottom center scroll;
-  /* max-width: 1920px; */
+  background: url('/assets/images/nasa.jpg') no-repeat bottom center scroll;
   max-width: 1920px;
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 80px);
   background-size: cover;
-  position: relative;
 }
 
 .video {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 80px);
   align-items: center;
 }
 
 .video i {
-  color: #18A0FB;
+  color: #18a0fb;
   font-size: 80px;
   display: flex;
   align-items: center;
@@ -126,4 +120,79 @@ body {
 .video button {
   width: 192px;
   height: 42px;
+}
+
+.posts h1 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+}
+
+.posts h1:first-child {
+  margin-top: 120px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  /* display: flex; */
+  height: 250px;
+  width: 450px;
+  /* margin-right: 50px; */
+  /* margin-bottom: 50px; */
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+}
+
+.card:nth-child(odd) {
+  margin-right: 100px;
+}
+
+.card p {
+  margin: 20px 0;
+}
+
+.card h4 {
+  margin-top: 30px;
+}
+
+.card-page {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-page img {
+  margin-right: 100px;
+  width: 440px;
+  height: 330px;
+}
+
+.card-page-cinza {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  margin-right: 100px;
+  width: 440px;
+  height: 330px;
+}
+
+.card-page-cinza img {
+  margin-right: 210px;
+  width: 440px;
+  height: 330px;
+}
+
+.card-page-cinza .card {
+  margin-right: 100px;
+}
+
+.bg-cinza {
+  width: 100%;
+  height: 600px;
+  background-color: #f5f5f5;
 }
